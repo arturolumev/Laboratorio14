@@ -22,9 +22,10 @@ class User extends Eloquent implements Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'nombre',
         'apellido',
         'email',
+        'tipo',
         'password',
     ];
 
