@@ -27,5 +27,8 @@ Route::get('/categorias/{id}/edit', [App\Http\Controllers\CategoriaController::c
 Route::post('/categorias/update/{id}', [App\Http\Controllers\CategoriaController::class, 'update']);
 Route::post('/categorias/delete/{id}',[App\Http\Controllers\CategoriaController::class, 'delete']);
 
-//DESARROLLADOR
+// DESARROLLADOR
 Route::get('/desarrollador', [App\Http\Controllers\DesarrolladorController::class, 'index']);
+
+// EMPRESA
+Route::get('/empresa', [App\Http\Controllers\EmpresaController::class, 'index']);

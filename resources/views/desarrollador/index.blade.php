@@ -1,5 +1,6 @@
 @extends('layouts.plantillabase')
 @section('contenido')
+    <h1>FORMULARIO DESARROLLADOR</h1>
     <form>
         <div class="mb-3">
             <label for="formFile" class="form-label">Documento</label>
@@ -9,25 +10,27 @@
             <label for="text" class="number">Numero</label>
             <input class="form-control" type="number" id="number">
         </div>
-        <div class="input-group date" data-provide="datepicker">
-            <input type="text" class="form-control">
-            <div class="input-group-addon">
-                <span class="glyphicon glyphicon-th"></span>
+        <div class="row form-group">
+            <label for="date">Fecha de nacimiento</label>
+            <div class="col-sm-4">
+                <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control">
+                    <span class="input-group-append">
+                    <span class="input-group-text bg-white">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </span>
+                </div>
             </div>
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="text" class="number">Archivo</label>
+            <input class="form-control" type="text" id="text">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="text" class="number">Experiencia laboral</label>
+            <input class="form-control" type="text" id="text">
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="enviar" class="btn btn-primary">Enviar</button>
     </form>
 @endsection
