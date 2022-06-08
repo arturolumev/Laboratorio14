@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Empresa; //modelo desarrollador
+use App\Models\Empresa; //modelo empresa
 
 class EmpresaController extends Controller
 {
