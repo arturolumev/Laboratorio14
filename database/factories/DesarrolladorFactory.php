@@ -14,7 +14,7 @@ class DesarrolladorFactory extends Factory
     public function definition()
     {
         return [
-            'documento_dev' => $this->faker->text(),
+            'documento_dev' => $this->faker->numberBetween($min = 10000000, $max = 99999999),
             'numero_dev' => $this->faker->numberBetween($min = 900000000, $max = 999999999),
             'fechanac_dev' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
             'archivo_dev' => $this->faker->text(),

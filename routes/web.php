@@ -29,6 +29,10 @@ Route::post('/categorias/delete/{id}',[App\Http\Controllers\CategoriaController:
 
 // DESARROLLADOR
 Route::get('/desarrollador', [App\Http\Controllers\DesarrolladorController::class, 'index']);
+Route::get('/desarrollador/exportexcel/', [App\Http\Controllers\DesarrolladorController::class, 'exportexcel']);
+Route::get('/desarrollador/exportpdf/', [App\Http\Controllers\DesarrolladorController::class, 'exportpdf']);
 
 // EMPRESA
 Route::get('/empresa', [App\Http\Controllers\EmpresaController::class, 'index']);
+Route::get('/empresa/exportexcel/', [App\Http\Controllers\EmpresaController::class, 'exportexcel']);
+Route::get('/empresa/exportpdf/', [App\Http\Controllers\EmpresaController::class, 'exportpdf']);

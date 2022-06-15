@@ -18,7 +18,7 @@ class UserFactory extends Factory
             'nombre' => $this->faker->name(),
             'apellido' => $this->faker->lastName(),
             'email' => $this->faker->email(),
-            'tipo' => $this->faker->text(), // QUE TIPO SERA?
+            'tipo' => $this->faker->randomElement($array = array ('D', 'E')),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
